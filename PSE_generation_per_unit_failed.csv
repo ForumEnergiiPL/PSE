@@ -166,3 +166,4 @@
 2026-05-31,1,https://api.raporty.pse.pl/api/gen-jw?%24filter=business_date+eq+%272026-05-31%27,400,"{""error"":{""code"":""BadRequest"",""message"":""Unable to extract $filter parameter from query string."",""status"":400}}"
 2026-05-31,1,https://api.raporty.pse.pl/api/gen-jw?%24filter=business_date+eq+%272026-05-31%27,400,"{""error"":{""code"":""BadRequest"",""message"":""Unable to extract $filter parameter from query string."",""status"":400}}"
 2026-05-31,1,https://api.raporty.pse.pl/api/gen-jw?%24filter=business_date+eq+%272026-05-31%27,400,"{""error"":{""code"":""BadRequest"",""message"":""Unable to extract $filter parameter from query string."",""status"":400}}"
+2026-05-31,1,https://api.raporty.pse.pl/api/gen-jw?%24filter=business_date+eq+%272026-05-31%27,400,"{""error"":{""code"":""BadRequest"",""message"":""Unable to extract $filter parameter from query string."",""status"":400}}"
