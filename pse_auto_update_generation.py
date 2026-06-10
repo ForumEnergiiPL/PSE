@@ -1,6 +1,8 @@
 import os
 import time
 import shutil
+from urllib.parse import urljoin
+
 import requests
 import pandas as pd
 
@@ -12,19 +14,38 @@ import pandas as pd
 BASE_URL = "https://api.raporty.pse.pl/api/gen-jw"
 
 CSV_FILE = "PSE_generation_per_unit_since_10_march.csv"
-
-# od kiedy ma zacząć, jeśli pliku jeszcze nie ma
-START_DATE = "2026-03-10"
-
 FAILED_CSV = "PSE_generation_per_unit_failed.csv"
 
-REQUEST_TIMEOUT = 90
-SLEEP_BETWEEN_PAGES = 3.0
-
-MAX_PAGES = 300
-MAX_RETRIES = 8
+# Od kiedy zacząć, jeśli pliku jeszcze nie ma
+START_DATE = "2026-03-10"
 
 TIMEZONE = "Europe/Warsaw"
+
+REQUEST_TIMEOUT = 90
+SLEEP_BETWEEN_PAGES = 2.0
+
+MAX_PAGES = 500
+MAX_RETRIES = 8
+
+# Ile dni maksymalnie pobrać przy jednym uruchomieniu workflow.
+# Jeśli masz już plik prawie aktualny, może zostać 3.
+# Jeśli chcesz nadrobić zaległości szybciej, daj np. 10.
+MAX_DAYS_PER_RUN = 3
+
+PAGE_SIZE = 1000
+
+SELECT_FIELDS = (
+    "resource_code,value,power_plant,operating_mode,"
+    "dtime,period,business_date"
+)
+
+COLUMNS = [
+    "kod_jw",
+    "timestamp",
+    "wartosc_mw",
+    "elektrownia",
+    "tryb_pracy"
+]
 
 
 # =========================
@@ -39,11 +60,33 @@ def get_next_link(data):
     )
 
 
+def normalize_next_link(next_link):
+    if not next_link:
+        return None
+
+    if next_link.startswith("http"):
+        return next_link
+
+    if next_link.startswith("/"):
+        return urljoin("https://api.raporty.pse.pl", next_link)
+
+    return urljoin(BASE_URL, next_link)
+
+
 def pick(row, *names):
     for name in names:
         if name in row and row[name] is not None:
             return row[name]
     return None
+
+
+def parse_mw(value):
+    if pd.isna(value):
+        return pd.NA
+
+    value = str(value).strip().replace(",", ".")
+
+    return pd.to_numeric(value, errors="coerce")
 
 
 def format_value(value):
@@ -60,10 +103,10 @@ def format_value(value):
 
 def timestamp_from_period(row):
     """
-    Timestamp bierzemy jako KONIEC okresu.
-    Najlepiej używać dtime, bo w PSE oznacza koniec 15-minutowego okresu.
+    Timestamp traktujemy jako KONIEC okresu.
+    Najlepiej używać pola dtime, bo w PSE oznacza koniec okresu 15-minutowego.
 
-    Czyli:
+    Przykład:
     period = 23:45 - 00:00
     dtime  = kolejny dzień 00:00
     """
@@ -122,6 +165,43 @@ def timestamp_from_period(row):
     return end_ts
 
 
+def save_failed_rows(failed_rows):
+    if not failed_rows:
+        return
+
+    failed_df = pd.DataFrame(failed_rows)
+
+    print("\nBŁĘDY POBIERANIA:")
+    print(failed_df.tail(30).to_string(index=False))
+
+    if os.path.exists(FAILED_CSV):
+        old_failed = pd.read_csv(FAILED_CSV, encoding="utf-8-sig")
+        failed_df = pd.concat([old_failed, failed_df], ignore_index=True)
+
+    failed_df = failed_df.drop_duplicates().reset_index(drop=True)
+
+    failed_df.to_csv(
+        FAILED_CSV,
+        index=False,
+        encoding="utf-8-sig"
+    )
+
+    print("\nZapisano błędy do:", FAILED_CSV)
+
+
+def atomic_save_csv(df, path):
+    temp_path = path + ".tmp"
+
+    df.to_csv(
+        temp_path,
+        index=False,
+        header=False,
+        encoding="utf-8-sig"
+    )
+
+    os.replace(temp_path, path)
+
+
 # =========================
 # REQUEST Z RETRY
 # =========================
@@ -145,7 +225,8 @@ def get_with_retry(url, params=None):
             if response.status_code == 200:
                 return response
 
-            print(f"HTTP {response.status_code}, próba {attempt}/{MAX_RETRIES}")
+            print(f"\nHTTP {response.status_code}, próba {attempt}/{MAX_RETRIES}")
+            print("URL:", response.url)
             print(response.text[:500])
 
             last_error = f"HTTP {response.status_code}: {response.text[:500]}"
@@ -161,7 +242,7 @@ def get_with_retry(url, params=None):
         except requests.exceptions.RequestException as e:
             last_error = str(e)
 
-            print(f"Błąd połączenia, próba {attempt}/{MAX_RETRIES}")
+            print(f"\nBłąd połączenia, próba {attempt}/{MAX_RETRIES}")
             print(last_error[:500])
 
             wait = attempt * 20
@@ -182,12 +263,14 @@ def fetch_one_day(day):
     url = BASE_URL
 
     params = {
-        "$filter": f"business_date eq '{day}'"
+        "$filter": f"business_date eq '{day}'",
+        "$select": SELECT_FIELDS,
+        "$orderby": "dtime,resource_code",
+        "$top": PAGE_SIZE
     }
 
     all_records = []
     failed = []
-    success = True
 
     page = 1
     seen_urls = set()
@@ -197,7 +280,7 @@ def fetch_one_day(day):
             response = get_with_retry(url, params)
 
         except Exception as e:
-            print("Nie udało się pobrać strony mimo retry.")
+            print("\nNie udało się pobrać strony mimo retry.")
             print(e)
 
             failed.append({
@@ -208,10 +291,10 @@ def fetch_one_day(day):
                 "error": str(e)
             })
 
-            success = False
-            break
+            return all_records, failed, False
 
-        print(f"{day} | strona {page} | HTTP {response.status_code}")
+        print(f"\n{day} | strona {page} | HTTP {response.status_code}")
+        print("URL:", response.url)
 
         if response.status_code != 200:
             print("Błąd API — dzień nie został pobrany do końca.")
@@ -225,8 +308,7 @@ def fetch_one_day(day):
                 "error": response.text[:1000]
             })
 
-            success = False
-            break
+            return all_records, failed, False
 
         current_url = response.url
 
@@ -241,12 +323,23 @@ def fetch_one_day(day):
                 "error": "API returned the same URL twice"
             })
 
-            success = False
-            break
+            return all_records, failed, False
 
         seen_urls.add(current_url)
 
-        data = response.json()
+        try:
+            data = response.json()
+        except Exception as e:
+            failed.append({
+                "day": day,
+                "page": page,
+                "url": response.url,
+                "status_code": "json_error",
+                "error": str(e)
+            })
+
+            return all_records, failed, False
+
         records = data.get("value", [])
 
         all_records.extend(records)
@@ -271,16 +364,15 @@ def fetch_one_day(day):
                 "error": "Reached MAX_PAGES"
             })
 
-            success = False
-            break
+            return all_records, failed, False
 
-        url = next_link
+        url = normalize_next_link(next_link)
         params = None
         page += 1
 
         time.sleep(SLEEP_BETWEEN_PAGES)
 
-    return all_records, failed, success
+    return all_records, failed, True
 
 
 # =========================
@@ -324,7 +416,7 @@ def process_records(records):
         if kod_jw is None or wartosc_mw is None or elektrownia is None or pd.isna(timestamp):
             continue
 
-        wartosc_mw_num = pd.to_numeric(wartosc_mw, errors="coerce")
+        wartosc_mw_num = parse_mw(wartosc_mw)
 
         if pd.isna(wartosc_mw_num):
             continue
@@ -344,7 +436,7 @@ def process_records(records):
     final = pd.DataFrame(rows)
 
     if final.empty:
-        return final
+        return pd.DataFrame(columns=COLUMNS)
 
     final = (
         final
@@ -356,15 +448,7 @@ def process_records(records):
     final["timestamp"] = final["timestamp"].dt.strftime("%d.%m.%Y %H:%M")
     final["wartosc_mw"] = final["wartosc_mw"].apply(format_value)
 
-    final = final[
-        [
-            "kod_jw",
-            "timestamp",
-            "wartosc_mw",
-            "elektrownia",
-            "tryb_pracy"
-        ]
-    ]
+    final = final[COLUMNS]
 
     return final
 
@@ -376,26 +460,13 @@ def process_records(records):
 def load_existing_file():
     if not os.path.exists(CSV_FILE):
         print("Nie ma jeszcze pliku. Zaczynam od START_DATE.")
-        return pd.DataFrame(
-            columns=[
-                "kod_jw",
-                "timestamp",
-                "wartosc_mw",
-                "elektrownia",
-                "tryb_pracy"
-            ]
-        )
+
+        return pd.DataFrame(columns=COLUMNS)
 
     df = pd.read_csv(
         CSV_FILE,
         header=None,
-        names=[
-            "kod_jw",
-            "timestamp",
-            "wartosc_mw",
-            "elektrownia",
-            "tryb_pracy"
-        ],
+        names=COLUMNS,
         encoding="utf-8-sig"
     )
 
@@ -407,44 +478,50 @@ def load_existing_file():
 
 
 # =========================
-# WYBÓR DNIA DO POBRANIA
+# WYBÓR DNI DO POBRANIA
 # =========================
 
-def decide_day_to_fetch(existing_df):
+def decide_days_to_fetch(existing_df):
     start_date = pd.to_datetime(START_DATE).date()
     today = pd.Timestamp.now(tz=TIMEZONE).date()
 
     if existing_df.empty:
-        return start_date.strftime("%Y-%m-%d")
+        first_day = start_date
+    else:
+        timestamps = pd.to_datetime(
+            existing_df["timestamp"],
+            format="%d.%m.%Y %H:%M",
+            errors="coerce"
+        )
 
-    timestamps = pd.to_datetime(
-        existing_df["timestamp"],
-        format="%d.%m.%Y %H:%M",
-        errors="coerce"
+        max_ts = timestamps.max()
+
+        if pd.isna(max_ts):
+            first_day = start_date
+        else:
+            print("Ostatni timestamp w pliku:", max_ts.strftime("%d.%m.%Y %H:%M"))
+
+            # Jeżeli ostatni timestamp to np. 11.03.2026 00:00,
+            # to znaczy, że skończony został business_date 10.03.2026.
+            # Następny business_date to data ostatniego timestampu, czyli 2026-03-11.
+            first_day = max_ts.date()
+
+            if first_day < start_date:
+                first_day = start_date
+
+    # Jeżeli jesteśmy już na dzisiaj albo dalej, odświeżamy dzisiejszy dzień.
+    if first_day >= today:
+        return [today.strftime("%Y-%m-%d")]
+
+    all_days = pd.date_range(
+        start=first_day,
+        end=today,
+        freq="D"
     )
 
-    max_ts = timestamps.max()
+    all_days = all_days[:MAX_DAYS_PER_RUN]
 
-    if pd.isna(max_ts):
-        return start_date.strftime("%Y-%m-%d")
-
-    print("Ostatni timestamp w pliku:", max_ts.strftime("%d.%m.%Y %H:%M"))
-
-    # Logika:
-    # Jeżeli ostatni timestamp to np. 11.03.2026 00:00,
-    # to znaczy, że skończony został business_date 10.03.2026.
-    # Następny dzień do pobrania to data ostatniego timestampu, czyli 2026-03-11.
-    candidate_day = max_ts.date()
-
-    if candidate_day < start_date:
-        candidate_day = start_date
-
-    # Jeżeli jeszcze nie doszliśmy do dzisiaj, pobieramy kolejny brakujący dzień.
-    if candidate_day < today:
-        return candidate_day.strftime("%Y-%m-%d")
-
-    # Jeżeli już jesteśmy na dzisiaj, za każdym uruchomieniem odświeżamy dzisiejszy dzień.
-    return today.strftime("%Y-%m-%d")
+    return [d.strftime("%Y-%m-%d") for d in all_days]
 
 
 # =========================
@@ -453,19 +530,18 @@ def decide_day_to_fetch(existing_df):
 
 def combine_and_clean(existing_df, new_df):
     combined_df = pd.concat(
-        [
-            existing_df,
-            new_df
-        ],
+        [existing_df, new_df],
         ignore_index=True
     )
 
     print("\nLiczba rekordów przed czyszczeniem:")
     print(len(combined_df))
 
-    combined_df["wartosc_mw_num"] = pd.to_numeric(
-        combined_df["wartosc_mw"],
-        errors="coerce"
+    combined_df["wartosc_mw_num"] = (
+        combined_df["wartosc_mw"]
+        .astype(str)
+        .str.replace(",", ".", regex=False)
+        .pipe(pd.to_numeric, errors="coerce")
     )
 
     combined_df = combined_df[
@@ -473,14 +549,23 @@ def combine_and_clean(existing_df, new_df):
         & (combined_df["wartosc_mw_num"].abs() > 1e-9)
     ].copy()
 
+    combined_df["wartosc_mw"] = combined_df["wartosc_mw_num"].apply(format_value)
     combined_df = combined_df.drop(columns=["wartosc_mw_num"])
-
-    combined_df = combined_df.drop_duplicates().reset_index(drop=True)
 
     combined_df["_sort_ts"] = pd.to_datetime(
         combined_df["timestamp"],
         format="%d.%m.%Y %H:%M",
         errors="coerce"
+    )
+
+    combined_df = combined_df[combined_df["_sort_ts"].notna()].copy()
+
+    # Kluczowa poprawka:
+    # jeśli ten sam kod_jw i timestamp pojawią się drugi raz,
+    # zostawiamy nowszy rekord z nowego pobrania.
+    combined_df = combined_df.drop_duplicates(
+        subset=["kod_jw", "timestamp"],
+        keep="last"
     )
 
     combined_df = (
@@ -489,6 +574,8 @@ def combine_and_clean(existing_df, new_df):
         .drop(columns=["_sort_ts"])
         .reset_index(drop=True)
     )
+
+    combined_df = combined_df[COLUMNS]
 
     print("Liczba rekordów po usunięciu zer i duplikatów:")
     print(len(combined_df))
@@ -500,65 +587,84 @@ def combine_and_clean(existing_df, new_df):
 # GŁÓWNE URUCHOMIENIE
 # =========================
 
-existing_df = load_existing_file()
+def main():
+    existing_df = load_existing_file()
 
-day_to_fetch = decide_day_to_fetch(existing_df)
+    days_to_fetch = decide_days_to_fetch(existing_df)
 
-print("\nDzień wybrany do pobrania:")
-print(day_to_fetch)
+    print("\nDni wybrane do pobrania:")
+    for day in days_to_fetch:
+        print(day)
 
-# Backup przed zmianą pliku
-if os.path.exists(CSV_FILE):
-    backup_csv = CSV_FILE.replace(".csv", "_backup_latest.csv")
-    shutil.copyfile(CSV_FILE, backup_csv)
-    print("Zrobiono backup:", backup_csv)
+    # Backup przed zmianą pliku
+    if os.path.exists(CSV_FILE):
+        backup_csv = CSV_FILE.replace(".csv", "_backup_latest.csv")
+        shutil.copyfile(CSV_FILE, backup_csv)
+        print("\nZrobiono backup:", backup_csv)
 
-records, failed, success = fetch_one_day(day_to_fetch)
+    all_new_dfs = []
+    all_failed = []
 
-if failed:
-    failed_df = pd.DataFrame(failed)
+    for day in days_to_fetch:
+        print("\n" + "=" * 60)
+        print("POBIERAM DZIEŃ:", day)
+        print("=" * 60)
 
-    if os.path.exists(FAILED_CSV):
-        old_failed = pd.read_csv(FAILED_CSV, encoding="utf-8-sig")
-        failed_df = pd.concat([old_failed, failed_df], ignore_index=True)
+        records, failed, success = fetch_one_day(day)
 
-    failed_df.to_csv(
-        FAILED_CSV,
-        index=False,
-        encoding="utf-8-sig"
-    )
+        if failed:
+            all_failed.extend(failed)
 
-    print("Zapisano błędy do:", FAILED_CSV)
+        if not success:
+            print(f"\nDzień {day} nie został pobrany do końca.")
 
-if not success:
-    print("\nDzień nie został pobrany do końca.")
-    print("Nie zapisuję zmian do głównego pliku.")
-    raise SystemExit
+            # Jeżeli to pierwszy nieudany dzień, przerywamy,
+            # żeby nie zrobić dziury w danych.
+            break
 
-new_df = process_records(records)
+        new_df = process_records(records)
 
-if new_df.empty:
-    print("Po obróbce nie ma nowych rekordów. Nie zapisuję zmian.")
-    raise SystemExit
+        if new_df.empty:
+            print(f"Po obróbce dzień {day} nie ma rekordów.")
+            continue
 
-print("\nNowe rekordy po obróbce:")
-print(len(new_df))
+        print(f"\nNowe rekordy po obróbce dla dnia {day}:")
+        print(len(new_df))
 
-print("\nPodgląd nowych danych:")
-print(new_df.head(30).to_string(index=False))
+        print("\nPodgląd nowych danych:")
+        print(new_df.head(20).to_string(index=False))
 
-combined_df = combine_and_clean(existing_df, new_df)
+        all_new_dfs.append(new_df)
 
-combined_df.to_csv(
-    CSV_FILE,
-    index=False,
-    header=False,
-    encoding="utf-8-sig"
-)
+    if all_failed:
+        save_failed_rows(all_failed)
 
-print("\nGotowe.")
-print("Zaktualizowany plik:")
-print(CSV_FILE)
+    if not all_new_dfs:
+        print("\nNie ma żadnych nowych poprawnie pobranych danych.")
+        print("Nie zapisuję zmian do głównego pliku.")
+        return
 
-print("\nOstatnie rekordy w pliku:")
-print(combined_df.tail(50).to_string(index=False))
+    new_all_df = pd.concat(all_new_dfs, ignore_index=True)
+
+    print("\nŁączna liczba nowych rekordów:")
+    print(len(new_all_df))
+
+    combined_df = combine_and_clean(existing_df, new_all_df)
+
+    atomic_save_csv(combined_df, CSV_FILE)
+
+    print("\nGotowe.")
+    print("Zaktualizowany plik:")
+    print(CSV_FILE)
+
+    print("\nOstatnie rekordy w pliku:")
+    print(combined_df.tail(50).to_string(index=False))
+
+    if all_failed:
+        print("\nUWAGA: część dni/stron miała błędy.")
+        print("Główny plik został zaktualizowany tylko poprawnie pobranymi danymi.")
+        print("Szczegóły błędów są w:", FAILED_CSV)
+
+
+if __name__ == "__main__":
+    main()
