@@ -1,7 +1,7 @@
 import os
 import time
 import shutil
-from urllib.parse import urljoin
+from urllib.parse import quote, urljoin
 
 import requests
 import pandas as pd
@@ -16,9 +16,7 @@ BASE_URL = "https://api.raporty.pse.pl/api/gen-jw"
 CSV_FILE = "PSE_generation_per_unit_since_10_march.csv"
 FAILED_CSV = "PSE_generation_per_unit_failed.csv"
 
-# Od kiedy zacząć, jeśli pliku jeszcze nie ma
 START_DATE = "2026-03-10"
-
 TIMEZONE = "Europe/Warsaw"
 
 REQUEST_TIMEOUT = 90
@@ -27,9 +25,7 @@ SLEEP_BETWEEN_PAGES = 2.0
 MAX_PAGES = 500
 MAX_RETRIES = 8
 
-# Ile dni maksymalnie pobrać przy jednym uruchomieniu workflow.
-# Jeśli masz już plik prawie aktualny, może zostać 3.
-# Jeśli chcesz nadrobić zaległości szybciej, daj np. 10.
+# Ile dni maksymalnie pobrać przy jednym uruchomieniu workflow
 MAX_DAYS_PER_RUN = 3
 
 PAGE_SIZE = 1000
@@ -49,8 +45,46 @@ COLUMNS = [
 
 
 # =========================
-# FUNKCJE POMOCNICZE
+# URL DO API
 # =========================
+
+def build_first_page_url(day):
+    """
+    Ważne:
+    Nie używamy requests params={...}, bo requests zmienia $filter na %24filter.
+    API PSE zaczęło tego nie przyjmować.
+    Dlatego $filter, $select, $orderby, $top są wpisane ręcznie w URL.
+    """
+
+    filter_value = quote(f"business_date eq '{day}'", safe="")
+    select_value = quote(SELECT_FIELDS, safe=",")
+    orderby_value = quote("dtime,resource_code", safe=",")
+
+    return (
+        f"{BASE_URL}"
+        f"?$filter={filter_value}"
+        f"&$select={select_value}"
+        f"&$orderby={orderby_value}"
+        f"&$top={PAGE_SIZE}"
+    )
+
+
+def normalize_next_link(next_link):
+    if not next_link:
+        return None
+
+    if next_link.startswith("http"):
+        full_url = next_link
+    elif next_link.startswith("/"):
+        full_url = urljoin("https://api.raporty.pse.pl", next_link)
+    else:
+        full_url = urljoin(BASE_URL, next_link)
+
+    # Gdyby API zwróciło zakodowane nazwy parametrów OData, poprawiamy tylko %24 na $
+    full_url = full_url.replace("%24", "$")
+
+    return full_url
+
 
 def get_next_link(data):
     return (
@@ -60,18 +94,9 @@ def get_next_link(data):
     )
 
 
-def normalize_next_link(next_link):
-    if not next_link:
-        return None
-
-    if next_link.startswith("http"):
-        return next_link
-
-    if next_link.startswith("/"):
-        return urljoin("https://api.raporty.pse.pl", next_link)
-
-    return urljoin(BASE_URL, next_link)
-
+# =========================
+# FUNKCJE POMOCNICZE
+# =========================
 
 def pick(row, *names):
     for name in names:
@@ -206,14 +231,13 @@ def atomic_save_csv(df, path):
 # REQUEST Z RETRY
 # =========================
 
-def get_with_retry(url, params=None):
+def get_with_retry(url):
     last_error = None
 
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             response = requests.get(
                 url,
-                params=params,
                 headers={
                     "Accept": "application/json",
                     "User-Agent": "Mozilla/5.0",
@@ -260,14 +284,7 @@ def get_with_retry(url, params=None):
 # =========================
 
 def fetch_one_day(day):
-    url = BASE_URL
-
-    params = {
-        "$filter": f"business_date eq '{day}'",
-        "$select": SELECT_FIELDS,
-        "$orderby": "dtime,resource_code",
-        "$top": PAGE_SIZE
-    }
+    url = build_first_page_url(day)
 
     all_records = []
     failed = []
@@ -277,7 +294,7 @@ def fetch_one_day(day):
 
     while True:
         try:
-            response = get_with_retry(url, params)
+            response = get_with_retry(url)
 
         except Exception as e:
             print("\nNie udało się pobrać strony mimo retry.")
@@ -288,7 +305,8 @@ def fetch_one_day(day):
                 "page": page,
                 "url": url,
                 "status_code": "connection_error",
-                "error": str(e)
+                "error": str(e),
+                "records_downloaded_before_failure": len(all_records)
             })
 
             return all_records, failed, False
@@ -305,7 +323,8 @@ def fetch_one_day(day):
                 "page": page,
                 "url": response.url,
                 "status_code": response.status_code,
-                "error": response.text[:1000]
+                "error": response.text[:1000],
+                "records_downloaded_before_failure": len(all_records)
             })
 
             return all_records, failed, False
@@ -320,7 +339,8 @@ def fetch_one_day(day):
                 "page": page,
                 "url": response.url,
                 "status_code": "repeated_url",
-                "error": "API returned the same URL twice"
+                "error": "API returned the same URL twice",
+                "records_downloaded_before_failure": len(all_records)
             })
 
             return all_records, failed, False
@@ -335,7 +355,8 @@ def fetch_one_day(day):
                 "page": page,
                 "url": response.url,
                 "status_code": "json_error",
-                "error": str(e)
+                "error": str(e),
+                "records_downloaded_before_failure": len(all_records)
             })
 
             return all_records, failed, False
@@ -361,13 +382,13 @@ def fetch_one_day(day):
                 "page": page,
                 "url": response.url,
                 "status_code": "max_pages",
-                "error": "Reached MAX_PAGES"
+                "error": "Reached MAX_PAGES",
+                "records_downloaded_before_failure": len(all_records)
             })
 
             return all_records, failed, False
 
         url = normalize_next_link(next_link)
-        params = None
         page += 1
 
         time.sleep(SLEEP_BETWEEN_PAGES)
@@ -421,7 +442,7 @@ def process_records(records):
         if pd.isna(wartosc_mw_num):
             continue
 
-        # Usuwamy 0 MW, zostawiamy wartości dodatnie i ujemne.
+        # Usuwamy 0 MW, zostawiamy wartości dodatnie i ujemne
         if abs(float(wartosc_mw_num)) < 1e-9:
             continue
 
@@ -501,15 +522,14 @@ def decide_days_to_fetch(existing_df):
         else:
             print("Ostatni timestamp w pliku:", max_ts.strftime("%d.%m.%Y %H:%M"))
 
-            # Jeżeli ostatni timestamp to np. 11.03.2026 00:00,
-            # to znaczy, że skończony został business_date 10.03.2026.
-            # Następny business_date to data ostatniego timestampu, czyli 2026-03-11.
+            # Jeżeli ostatni timestamp to np. 01.06.2026 00:00,
+            # to znaczy, że skończony został business_date 31.05.2026.
+            # Następny business_date to data ostatniego timestampu, czyli 2026-06-01.
             first_day = max_ts.date()
 
             if first_day < start_date:
                 first_day = start_date
 
-    # Jeżeli jesteśmy już na dzisiaj albo dalej, odświeżamy dzisiejszy dzień.
     if first_day >= today:
         return [today.strftime("%Y-%m-%d")]
 
@@ -560,8 +580,7 @@ def combine_and_clean(existing_df, new_df):
 
     combined_df = combined_df[combined_df["_sort_ts"].notna()].copy()
 
-    # Kluczowa poprawka:
-    # jeśli ten sam kod_jw i timestamp pojawią się drugi raz,
+    # Jeśli ten sam kod_jw i timestamp pojawią się drugi raz,
     # zostawiamy nowszy rekord z nowego pobrania.
     combined_df = combined_df.drop_duplicates(
         subset=["kod_jw", "timestamp"],
@@ -596,7 +615,6 @@ def main():
     for day in days_to_fetch:
         print(day)
 
-    # Backup przed zmianą pliku
     if os.path.exists(CSV_FILE):
         backup_csv = CSV_FILE.replace(".csv", "_backup_latest.csv")
         shutil.copyfile(CSV_FILE, backup_csv)
@@ -617,9 +635,7 @@ def main():
 
         if not success:
             print(f"\nDzień {day} nie został pobrany do końca.")
-
-            # Jeżeli to pierwszy nieudany dzień, przerywamy,
-            # żeby nie zrobić dziury w danych.
+            print("Przerywam, żeby nie zrobić dziury w danych.")
             break
 
         new_df = process_records(records)
