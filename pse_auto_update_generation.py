@@ -1,7 +1,7 @@
 import os
 import time
 import shutil
-from urllib.parse import quote, urljoin
+from urllib.parse import urljoin
 
 import requests
 import pandas as pd
@@ -25,10 +25,9 @@ SLEEP_BETWEEN_PAGES = 2.0
 MAX_PAGES = 500
 MAX_RETRIES = 8
 
-# Ile dni maksymalnie pobrać przy jednym uruchomieniu workflow
+# Ile dni maksymalnie pobrać przy jednym uruchomieniu workflow.
+# Jak chcesz szybciej nadrobić zaległości, zwiększ np. do 7 albo 10.
 MAX_DAYS_PER_RUN = 3
-
-PAGE_SIZE = 1000
 
 SELECT_FIELDS = (
     "resource_code,value,power_plant,operating_mode,"
@@ -44,28 +43,34 @@ COLUMNS = [
 ]
 
 
+print("SCRIPT VERSION: PSE_GEN_JW_FIX_NO_TOP_V4")
+
+
 # =========================
 # URL DO API
 # =========================
 
-def build_first_page_url(day):
+def build_first_page_url(day, simple=False):
     """
     Ważne:
-    Nie używamy requests params={...}, bo requests zmienia $filter na %24filter.
-    API PSE zaczęło tego nie przyjmować.
-    Dlatego $filter, $select, $orderby, $top są wpisane ręcznie w URL.
+    Nie używamy requests params={...}, bo requests zamienia $filter na %24filter.
+    API PSE tego nie przyjmuje.
+
+    Nie używamy $top, bo API PSE zwracało:
+    Invalid Query Parameter: $top
     """
 
-    filter_value = quote(f"business_date eq '{day}'", safe="")
-    select_value = quote(SELECT_FIELDS, safe=",")
-    orderby_value = quote("dtime,resource_code", safe=",")
+    if simple:
+        return (
+            f"{BASE_URL}"
+            f"?$filter=business_date%20eq%20%27{day}%27"
+        )
 
     return (
         f"{BASE_URL}"
-        f"?$filter={filter_value}"
-        f"&$select={select_value}"
-        f"&$orderby={orderby_value}"
-        f"&$top={PAGE_SIZE}"
+        f"?$filter=business_date%20eq%20%27{day}%27"
+        f"&$select={SELECT_FIELDS}"
+        f"&$orderby=dtime,resource_code"
     )
 
 
@@ -80,7 +85,7 @@ def normalize_next_link(next_link):
     else:
         full_url = urljoin(BASE_URL, next_link)
 
-    # Gdyby API zwróciło zakodowane nazwy parametrów OData, poprawiamy tylko %24 na $
+    # Gdyby API zwróciło zakodowane nazwy parametrów OData
     full_url = full_url.replace("%24", "$")
 
     return full_url
@@ -234,6 +239,9 @@ def atomic_save_csv(df, path):
 def get_with_retry(url):
     last_error = None
 
+    # Zabezpieczenie, gdyby gdziekolwiek pojawiło się %24filter
+    url = url.replace("%24", "$")
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             response = requests.get(
@@ -250,7 +258,8 @@ def get_with_retry(url):
                 return response
 
             print(f"\nHTTP {response.status_code}, próba {attempt}/{MAX_RETRIES}")
-            print("URL:", response.url)
+            print("REQUESTED URL:", url)
+            print("RESPONSE URL:", response.url)
             print(response.text[:500])
 
             last_error = f"HTTP {response.status_code}: {response.text[:500]}"
@@ -284,13 +293,14 @@ def get_with_retry(url):
 # =========================
 
 def fetch_one_day(day):
-    url = build_first_page_url(day)
+    url = build_first_page_url(day, simple=False)
 
     all_records = []
     failed = []
 
     page = 1
     seen_urls = set()
+    used_fallback = False
 
     while True:
         try:
@@ -315,15 +325,37 @@ def fetch_one_day(day):
         print("URL:", response.url)
 
         if response.status_code != 200:
+            error_text = response.text[:1000]
+
+            # Awaryjnie: jeśli PSE nie przyjmie $select albo $orderby,
+            # powtarzamy pierwszy request tylko z $filter.
+            if (
+                page == 1
+                and not used_fallback
+                and response.status_code == 400
+                and (
+                    "Invalid Query Parameter" in error_text
+                    or "Unable to extract" in error_text
+                )
+            ):
+                print("\nAPI odrzuciło rozbudowany URL.")
+                print("Próbuję awaryjnie tylko z $filter...")
+
+                url = build_first_page_url(day, simple=True)
+                used_fallback = True
+                seen_urls.clear()
+                time.sleep(SLEEP_BETWEEN_PAGES)
+                continue
+
             print("Błąd API — dzień nie został pobrany do końca.")
-            print(response.text[:1000])
+            print(error_text)
 
             failed.append({
                 "day": day,
                 "page": page,
                 "url": response.url,
                 "status_code": response.status_code,
-                "error": response.text[:1000],
+                "error": error_text,
                 "records_downloaded_before_failure": len(all_records)
             })
 
@@ -469,9 +501,7 @@ def process_records(records):
     final["timestamp"] = final["timestamp"].dt.strftime("%d.%m.%Y %H:%M")
     final["wartosc_mw"] = final["wartosc_mw"].apply(format_value)
 
-    final = final[COLUMNS]
-
-    return final
+    return final[COLUMNS]
 
 
 # =========================
@@ -481,7 +511,6 @@ def process_records(records):
 def load_existing_file():
     if not os.path.exists(CSV_FILE):
         print("Nie ma jeszcze pliku. Zaczynam od START_DATE.")
-
         return pd.DataFrame(columns=COLUMNS)
 
     df = pd.read_csv(
