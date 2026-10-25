@@ -1155720,3 +1155720,1213 @@ ZRN_4-01,25.10.2026 03:00,-5.8099,Żarnowiec,Pobór
 ZRN_4-02,25.10.2026 03:00,-3.9788,Żarnowiec,Pobór
 ZRN_4-03,25.10.2026 03:00,-3.521,Żarnowiec,Pobór
 ZRN_4-04,25.10.2026 03:00,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 03:15,202.5343,Bełchatów,Generacja
+BEL 4-06,25.10.2026 03:15,208.4194,Bełchatów,Generacja
+BEL 4-08,25.10.2026 03:15,215.9782,Bełchatów,Generacja
+BEL 4-09,25.10.2026 03:15,186.3373,Bełchatów,Generacja
+BEL 4-10,25.10.2026 03:15,225.1813,Bełchatów,Generacja
+BEL 4-12,25.10.2026 03:15,245.7037,Bełchatów,Generacja
+CHZ21S01,25.10.2026 03:15,34.06,Chorzów,Generacja
+CHZ21S02,25.10.2026 03:15,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 03:15,125.7,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 03:15,84.2428,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 03:15,75.8943,EC Siekierki,Generacja
+STW42S12,25.10.2026 03:15,233.2,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 03:15,154.1,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 03:15,445.4,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 03:15,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 03:15,142,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 03:15,41.4401,Karolin 2,Generacja
+KAT_1S01,25.10.2026 03:15,60.08,Katowice,Generacja
+KOZ11S02,25.10.2026 03:15,176.9126,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 03:15,174.8472,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 03:15,175.6748,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 03:15,134.7454,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 03:15,176.015,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 03:15,166.0654,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 03:15,342.2,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 03:15,53.9,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 03:15,55.2,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 03:15,347.4,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 03:15,411.9,Opole,Generacja
+OPL 4-06,25.10.2026 03:15,412.7,Opole,Generacja
+OSB_2S02,25.10.2026 03:15,153,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 03:15,157.2,Połaniec,Generacja
+POL_2S03,25.10.2026 03:15,145.4,Połaniec,Generacja
+POL24S09,25.10.2026 03:15,192,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 03:15,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 03:15,44.3,Skawina,Generacja
+TUR 1-01,25.10.2026 03:15,101.6,Turów,Generacja
+TUR 2-03,25.10.2026 03:15,102.2,Turów,Generacja
+TUR 2-05,25.10.2026 03:15,103.4,Turów,Generacja
+ZGR22S01,25.10.2026 03:15,119.9785,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 03:15,-6.0006,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 03:15,-4.1314,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 03:15,-3.521,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 03:15,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 03:30,204.8116,Bełchatów,Generacja
+BEL 4-06,25.10.2026 03:30,210.2184,Bełchatów,Generacja
+BEL 4-08,25.10.2026 03:30,216.319,Bełchatów,Generacja
+BEL 4-09,25.10.2026 03:30,184.6446,Bełchatów,Generacja
+BEL 4-10,25.10.2026 03:30,224.0429,Bełchatów,Generacja
+BEL 4-12,25.10.2026 03:30,225.0785,Bełchatów,Generacja
+CHZ21S01,25.10.2026 03:30,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 03:30,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 03:30,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 03:30,83.7818,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 03:30,75.5907,EC Siekierki,Generacja
+STW42S12,25.10.2026 03:30,231.9,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 03:30,153.7,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 03:30,418,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 03:30,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 03:30,140.6,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 03:30,43.3276,Karolin 2,Generacja
+KAT_1S01,25.10.2026 03:30,56.8,Katowice,Generacja
+KOZ11S02,25.10.2026 03:30,165.9931,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 03:30,174.9751,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 03:30,175.3547,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 03:30,135.0127,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 03:30,173.5006,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 03:30,160.9832,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 03:30,347,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 03:30,51.7,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 03:30,55.6,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 03:30,356.6,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 03:30,411.6,Opole,Generacja
+OPL 4-06,25.10.2026 03:30,412.4,Opole,Generacja
+OSB_2S02,25.10.2026 03:30,138.3,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 03:30,144.8,Połaniec,Generacja
+POL_2S03,25.10.2026 03:30,133.4,Połaniec,Generacja
+POL24S09,25.10.2026 03:30,189.4,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 03:30,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 03:30,43.9,Skawina,Generacja
+TUR 1-01,25.10.2026 03:30,101,Turów,Generacja
+TUR 2-03,25.10.2026 03:30,108.9,Turów,Generacja
+TUR 2-05,25.10.2026 03:30,102.9,Turów,Generacja
+ZGR22S01,25.10.2026 03:30,119.9785,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 03:30,-5.9625,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 03:30,-4.1314,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 03:30,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 03:30,-3.9025,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 03:45,205.2097,Bełchatów,Generacja
+BEL 4-06,25.10.2026 03:45,210.984,Bełchatów,Generacja
+BEL 4-08,25.10.2026 03:45,217.0778,Bełchatów,Generacja
+BEL 4-09,25.10.2026 03:45,187.1466,Bełchatów,Generacja
+BEL 4-10,25.10.2026 03:45,223.8184,Bełchatów,Generacja
+BEL 4-12,25.10.2026 03:45,226.0121,Bełchatów,Generacja
+CHZ21S01,25.10.2026 03:45,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 03:45,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 03:45,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 03:45,83.2699,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 03:45,74.7978,EC Siekierki,Generacja
+STW42S12,25.10.2026 03:45,233.2,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 03:45,154.2,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 03:45,419.6,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 03:45,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 03:45,144.2,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 03:45,42.8821,Karolin 2,Generacja
+KAT_1S01,25.10.2026 03:45,56.71,Katowice,Generacja
+KOZ11S02,25.10.2026 03:45,168.9595,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 03:45,169.004,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 03:45,168.6921,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 03:45,134.974,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 03:45,170.1979,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 03:45,159.4641,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 03:45,346.9,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 03:45,53.5,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 03:45,55.2,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 03:45,373.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 03:45,414.4,Opole,Generacja
+OPL 4-06,25.10.2026 03:45,415.2,Opole,Generacja
+OSB_2S02,25.10.2026 03:45,139.1,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 03:45,145.7,Połaniec,Generacja
+POL_2S03,25.10.2026 03:45,134.3,Połaniec,Generacja
+POL24S09,25.10.2026 03:45,191.7,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 03:45,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 03:45,44.1,Skawina,Generacja
+TUR 1-01,25.10.2026 03:45,101.4,Turów,Generacja
+TUR 2-03,25.10.2026 03:45,113.5,Turów,Generacja
+TUR 2-05,25.10.2026 03:45,103.1,Turów,Generacja
+ZGR22S01,25.10.2026 03:45,119.8498,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 03:45,-5.6573,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 03:45,-3.9788,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 03:45,-3.521,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 03:45,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 04:00,200.1928,Bełchatów,Generacja
+BEL 4-06,25.10.2026 04:00,209.1286,Bełchatów,Generacja
+BEL 4-08,25.10.2026 04:00,214.3922,Bełchatów,Generacja
+BEL 4-09,25.10.2026 04:00,185.8889,Bełchatów,Generacja
+BEL 4-10,25.10.2026 04:00,221.6002,Bełchatów,Generacja
+BEL 4-12,25.10.2026 04:00,222.2366,Bełchatów,Generacja
+CHZ21S01,25.10.2026 04:00,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 04:00,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 04:00,125.7,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 04:00,85.6288,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 04:00,75.2439,EC Siekierki,Generacja
+STW42S12,25.10.2026 04:00,228.8,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 04:00,153.9,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 04:00,410.7,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 04:00,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 04:00,142.7,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 04:00,42.842,Karolin 2,Generacja
+KAT_1S01,25.10.2026 04:00,56.87,Katowice,Generacja
+KOZ11S02,25.10.2026 04:00,162.6736,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 04:00,158.8733,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 04:00,159.3756,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 04:00,133.9931,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 04:00,162.3322,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 04:00,159.1233,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 04:00,338.2,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 04:00,55.5,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 04:00,55.6,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 04:00,254.4,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 04:00,410.5,Opole,Generacja
+OPL 4-06,25.10.2026 04:00,411.3,Opole,Generacja
+OSB_2S02,25.10.2026 04:00,147.5,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 04:00,144.2,Połaniec,Generacja
+POL_2S03,25.10.2026 04:00,139.7,Połaniec,Generacja
+POL24S09,25.10.2026 04:00,191.6,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 04:00,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 04:00,44,Skawina,Generacja
+TUR 1-01,25.10.2026 04:00,102,Turów,Generacja
+TUR 2-03,25.10.2026 04:00,112.2,Turów,Generacja
+TUR 2-05,25.10.2026 04:00,103.5,Turów,Generacja
+ZGR22S01,25.10.2026 04:00,120.1609,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 04:00,-6.1532,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 04:00,-3.521,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 04:00,-3.5973,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 04:15,205.7939,Bełchatów,Generacja
+BEL 4-06,25.10.2026 04:15,212.2495,Bełchatów,Generacja
+BEL 4-08,25.10.2026 04:15,226.3834,Bełchatów,Generacja
+BEL 4-09,25.10.2026 04:15,188.3494,Bełchatów,Generacja
+BEL 4-10,25.10.2026 04:15,233.668,Bełchatów,Generacja
+BEL 4-12,25.10.2026 04:15,247.6408,Bełchatów,Generacja
+CHZ21S01,25.10.2026 04:15,34.06,Chorzów,Generacja
+CHZ21S02,25.10.2026 04:15,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 04:15,125.6,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 04:15,84.966,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 04:15,76.3806,EC Siekierki,Generacja
+STW42S12,25.10.2026 04:15,234.2,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 04:15,153.9,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 04:15,471.4,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 04:15,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 04:15,143,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 04:15,42.4025,Karolin 2,Generacja
+KAT_1S01,25.10.2026 04:15,62.37,Katowice,Generacja
+KOZ11S02,25.10.2026 04:15,180.0584,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 04:15,175.9549,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 04:15,175.9155,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 04:15,135.4398,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 04:15,178.8165,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 04:15,159.368,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 04:15,350.5,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 04:15,55.6,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 04:15,56.5,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 04:15,196.8,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 04:15,415.9,Opole,Generacja
+OPL 4-06,25.10.2026 04:15,416.8,Opole,Generacja
+OSB_2S02,25.10.2026 04:15,162.1,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 04:15,157.8,Połaniec,Generacja
+POL_2S03,25.10.2026 04:15,152.1,Połaniec,Generacja
+POL24S09,25.10.2026 04:15,183.3,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 04:15,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 04:15,46.2,Skawina,Generacja
+TUR 1-01,25.10.2026 04:15,101.4,Turów,Generacja
+TUR 2-03,25.10.2026 04:15,112,Turów,Generacja
+TUR 2-05,25.10.2026 04:15,104.2,Turów,Generacja
+ZGR22S01,25.10.2026 04:15,120.0107,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 04:15,-6.4584,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 04:15,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 04:15,-3.5973,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 04:30,203.3334,Bełchatów,Generacja
+BEL 4-06,25.10.2026 04:30,210.2474,Bełchatów,Generacja
+BEL 4-08,25.10.2026 04:30,217.7222,Bełchatów,Generacja
+BEL 4-09,25.10.2026 04:30,186.9293,Bełchatów,Generacja
+BEL 4-10,25.10.2026 04:30,225.4204,Bełchatów,Generacja
+BEL 4-12,25.10.2026 04:30,259.6448,Bełchatów,Generacja
+CHZ21S01,25.10.2026 04:30,34.06,Chorzów,Generacja
+CHZ21S02,25.10.2026 04:30,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 04:30,125.8,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 04:30,85.9815,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 04:30,75.7726,EC Siekierki,Generacja
+STW42S12,25.10.2026 04:30,234.4,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 04:30,153.8,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 04:30,450.6,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 04:30,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 04:30,142,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 04:30,42.4196,Karolin 2,Generacja
+KAT_1S01,25.10.2026 04:30,56.86,Katowice,Generacja
+KOZ11S02,25.10.2026 04:30,177.0995,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 04:30,185.2957,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 04:30,184.1574,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 04:30,134.4815,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 04:30,176.776,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 04:30,171.4647,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 04:30,367.8,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 04:30,53.1,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 04:30,55.8,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 04:30,197,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 04:30,411.1,Opole,Generacja
+OPL 4-06,25.10.2026 04:30,411.1,Opole,Generacja
+OSB_2S02,25.10.2026 04:30,161.7,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 04:30,157.6,Połaniec,Generacja
+POL_2S03,25.10.2026 04:30,150.6,Połaniec,Generacja
+POL24S09,25.10.2026 04:30,181.7,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 04:30,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 04:30,46.1,Skawina,Generacja
+TUR 1-01,25.10.2026 04:30,101.5,Turów,Generacja
+TUR 2-03,25.10.2026 04:30,111.4,Turów,Generacja
+TUR 2-05,25.10.2026 04:30,103,Turów,Generacja
+ZGR22S01,25.10.2026 04:30,119.9356,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 04:30,-6.1532,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 04:30,-3.521,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 04:30,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 04:45,202.7229,Bełchatów,Generacja
+BEL 4-06,25.10.2026 04:45,207.8253,Bełchatów,Generacja
+BEL 4-08,25.10.2026 04:45,216.629,Bełchatów,Generacja
+BEL 4-09,25.10.2026 04:45,187.7769,Bełchatów,Generacja
+BEL 4-10,25.10.2026 04:45,228.2675,Bełchatów,Generacja
+BEL 4-12,25.10.2026 04:45,243.6805,Bełchatów,Generacja
+CHZ21S01,25.10.2026 04:45,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 04:45,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 04:45,125.5,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 04:45,83.7487,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 04:45,74.1737,EC Siekierki,Generacja
+STW42S12,25.10.2026 04:45,232.3,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 04:45,153.7,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 04:45,440.5,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 04:45,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 04:45,140.8,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 04:45,42.7719,Karolin 2,Generacja
+KAT_1S01,25.10.2026 04:45,57.17,Katowice,Generacja
+KOZ11S02,25.10.2026 04:45,172.776,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 04:45,165.4271,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 04:45,171.2211,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 04:45,134.5023,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 04:45,172.64,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 04:45,170.7077,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 04:45,353.2,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 04:45,53.4,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 04:45,55.4,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 04:45,197.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 04:45,411.9,Opole,Generacja
+OPL 4-06,25.10.2026 04:45,412.4,Opole,Generacja
+OSB_2S02,25.10.2026 04:45,157.6,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 04:45,154.1,Połaniec,Generacja
+POL_2S03,25.10.2026 04:45,148.5,Połaniec,Generacja
+POL24S09,25.10.2026 04:45,182.3,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 04:45,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 04:45,46.5,Skawina,Generacja
+TUR 1-01,25.10.2026 04:45,101.3,Turów,Generacja
+TUR 2-03,25.10.2026 04:45,108.7,Turów,Generacja
+TUR 2-05,25.10.2026 04:45,103.5,Turów,Generacja
+ZGR22S01,25.10.2026 04:45,120.0215,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 04:45,-6.3058,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 04:45,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 04:45,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 05:00,202.1059,Bełchatów,Generacja
+BEL 4-06,25.10.2026 05:00,208.5726,Bełchatów,Generacja
+BEL 4-08,25.10.2026 05:00,216.4084,Bełchatów,Generacja
+BEL 4-09,25.10.2026 05:00,186.9161,Bełchatów,Generacja
+BEL 4-10,25.10.2026 05:00,222.8509,Bełchatów,Generacja
+BEL 4-12,25.10.2026 05:00,238.1184,Bełchatów,Generacja
+CHZ21S01,25.10.2026 05:00,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 05:00,33.9,Chorzów,Generacja
+CZN_1S01,25.10.2026 05:00,125.7,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 05:00,80.9876,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 05:00,75.2837,EC Siekierki,Generacja
+STW42S12,25.10.2026 05:00,231.4,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 05:00,153.8,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 05:00,433.7,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 05:00,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 05:00,141.1,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 05:00,41.5184,Karolin 2,Generacja
+KAT_1S01,25.10.2026 05:00,61.58,Katowice,Generacja
+KOZ11S02,25.10.2026 05:00,176.8079,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 05:00,181.8056,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 05:00,181.5116,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 05:00,135.4416,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 05:00,172.3484,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 05:00,182.2836,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 05:00,393.4,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 05:00,52.7,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 05:00,55.5,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 05:00,197,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 05:00,411.5,Opole,Generacja
+OPL 4-06,25.10.2026 05:00,412.4,Opole,Generacja
+OSB_2S02,25.10.2026 05:00,158.8,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 05:00,154.2,Połaniec,Generacja
+POL_2S03,25.10.2026 05:00,157.9,Połaniec,Generacja
+POL24S09,25.10.2026 05:00,157,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 05:00,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 05:00,46.4,Skawina,Generacja
+TUR 1-01,25.10.2026 05:00,101.5,Turów,Generacja
+TUR 2-03,25.10.2026 05:00,109.7,Turów,Generacja
+TUR 2-05,25.10.2026 05:00,103.1,Turów,Generacja
+ZGR22S01,25.10.2026 05:00,120.0215,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 05:00,-6.1151,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 05:00,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 05:00,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 05:15,199.679,Bełchatów,Generacja
+BEL 4-06,25.10.2026 05:15,210.2043,Bełchatów,Generacja
+BEL 4-08,25.10.2026 05:15,217.5987,Bełchatów,Generacja
+BEL 4-09,25.10.2026 05:15,187.1204,Bełchatów,Generacja
+BEL 4-10,25.10.2026 05:15,224.7086,Bełchatów,Generacja
+BEL 4-12,25.10.2026 05:15,248.2915,Bełchatów,Generacja
+CHZ21S01,25.10.2026 05:15,34.06,Chorzów,Generacja
+CHZ21S02,25.10.2026 05:15,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 05:15,125.7,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 05:15,73.3424,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 05:15,57.9867,EC Siekierki,Generacja
+STW42S12,25.10.2026 05:15,234.5,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 05:15,153.6,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 05:15,456.9,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 05:15,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 05:15,131.2,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 05:15,43.1542,Karolin 2,Generacja
+KAT_1S01,25.10.2026 05:15,61.95,Katowice,Generacja
+KOZ11S02,25.10.2026 05:15,178.6887,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 05:15,177.2228,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 05:15,180.1146,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 05:15,135.0509,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 05:15,173.5602,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 05:15,188.1493,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 05:15,443.1,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 05:15,53.3,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 05:15,57.1,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 05:15,196.6,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 05:15,412.5,Opole,Generacja
+OPL 4-06,25.10.2026 05:15,413.6,Opole,Generacja
+OSB_2S02,25.10.2026 05:15,154.2,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 05:15,154.8,Połaniec,Generacja
+POL_2S03,25.10.2026 05:15,169.3,Połaniec,Generacja
+POL24S09,25.10.2026 05:15,131.5,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 05:15,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 05:15,46.3,Skawina,Generacja
+TUR 1-01,25.10.2026 05:15,101.4,Turów,Generacja
+TUR 2-03,25.10.2026 05:15,107.6,Turów,Generacja
+TUR 2-05,25.10.2026 05:15,103,Turów,Generacja
+ZGR22S01,25.10.2026 05:15,120.0322,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 05:15,-6.1151,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 05:15,-3.7499,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 05:15,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 05:30,197.0906,Bełchatów,Generacja
+BEL 4-06,25.10.2026 05:30,210.2719,Bełchatów,Generacja
+BEL 4-08,25.10.2026 05:30,217.9189,Bełchatów,Generacja
+BEL 4-09,25.10.2026 05:30,185.3164,Bełchatów,Generacja
+BEL 4-10,25.10.2026 05:30,225.3439,Bełchatów,Generacja
+BEL 4-12,25.10.2026 05:30,235.9135,Bełchatów,Generacja
+CHZ21S01,25.10.2026 05:30,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 05:30,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 05:30,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 05:30,59.6158,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 05:30,54.6561,EC Siekierki,Generacja
+STW42S12,25.10.2026 05:30,232.9,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 05:30,153.9,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 05:30,430.4,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 05:30,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 05:30,141,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 05:30,42.993,Karolin 2,Generacja
+KAT_1S01,25.10.2026 05:30,62.19,Katowice,Generacja
+KOZ11S02,25.10.2026 05:30,184.4983,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 05:30,178.2413,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 05:30,181.588,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 05:30,126.3247,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 05:30,177.9034,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 05:30,185.6748,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 05:30,449.3,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 05:30,53.5,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 05:30,58.2,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 05:30,196.6,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 05:30,410.9,Opole,Generacja
+OPL 4-06,25.10.2026 05:30,411.9,Opole,Generacja
+OSB_2S02,25.10.2026 05:30,158.9,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 05:30,151.5,Połaniec,Generacja
+POL_2S03,25.10.2026 05:30,158.2,Połaniec,Generacja
+POL24S09,25.10.2026 05:30,132.3,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 05:30,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 05:30,47.5,Skawina,Generacja
+TUR 1-01,25.10.2026 05:30,100.8,Turów,Generacja
+TUR 2-03,25.10.2026 05:30,109.8,Turów,Generacja
+TUR 2-05,25.10.2026 05:30,103.1,Turów,Generacja
+ZGR22S01,25.10.2026 05:30,119.9571,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 05:30,-5.8862,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 05:30,-3.521,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 05:30,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 05:45,201.5574,Bełchatów,Generacja
+BEL 4-06,25.10.2026 05:45,213.4891,Bełchatów,Generacja
+BEL 4-08,25.10.2026 05:45,225.4462,Bełchatów,Generacja
+BEL 4-09,25.10.2026 05:45,186.9641,Bełchatów,Generacja
+BEL 4-10,25.10.2026 05:45,231.4092,Bełchatów,Generacja
+BEL 4-12,25.10.2026 05:45,253.6621,Bełchatów,Generacja
+CHZ21S01,25.10.2026 05:45,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 05:45,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 05:45,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 05:45,62.3491,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 05:45,54.749,EC Siekierki,Generacja
+STW42S12,25.10.2026 05:45,232.6,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 05:45,154.1,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 05:45,454.8,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 05:45,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 05:45,143.3,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 05:45,43.0075,Karolin 2,Generacja
+KAT_1S01,25.10.2026 05:45,63.44,Katowice,Generacja
+KOZ11S02,25.10.2026 05:45,178.1267,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 05:45,195.4959,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 05:45,177.6939,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 05:45,134.5579,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 05:45,177.1019,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 05:45,195.2917,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 05:45,507.3,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 05:45,53.1,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 05:45,59.1,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 05:45,197.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 05:45,411.4,Opole,Generacja
+OPL 4-06,25.10.2026 05:45,412.1,Opole,Generacja
+OSB_2S02,25.10.2026 05:45,164,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 05:45,157,Połaniec,Generacja
+POL_2S03,25.10.2026 05:45,152.5,Połaniec,Generacja
+POL24S09,25.10.2026 05:45,131.6,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 05:45,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 05:45,47.1,Skawina,Generacja
+TUR 1-01,25.10.2026 05:45,100.7,Turów,Generacja
+TUR 2-03,25.10.2026 05:45,110,Turów,Generacja
+TUR 2-05,25.10.2026 05:45,103.1,Turów,Generacja
+ZGR22S01,25.10.2026 05:45,120.1395,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 05:45,-6.1532,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 05:45,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 05:45,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 06:00,197.2154,Bełchatów,Generacja
+BEL 4-06,25.10.2026 06:00,208.7391,Bełchatów,Generacja
+BEL 4-08,25.10.2026 06:00,216.1471,Bełchatów,Generacja
+BEL 4-09,25.10.2026 06:00,186.7402,Bełchatów,Generacja
+BEL 4-10,25.10.2026 06:00,225.8561,Bełchatów,Generacja
+BEL 4-12,25.10.2026 06:00,240.2137,Bełchatów,Generacja
+CHZ21S01,25.10.2026 06:00,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 06:00,33.9,Chorzów,Generacja
+CZN_1S01,25.10.2026 06:00,125.6,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 06:00,62.4589,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 06:00,56.5591,EC Siekierki,Generacja
+STW42S12,25.10.2026 06:00,232.4,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 06:00,154.2,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 06:00,468.9,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 06:00,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 06:00,141.9,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 06:00,43.9584,Karolin 2,Generacja
+KAT_1S01,25.10.2026 06:00,64.58,Katowice,Generacja
+KOZ11S02,25.10.2026 06:00,187.9462,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 06:00,185.0446,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 06:00,185.4392,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 06:00,134.8629,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 06:00,188.1123,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 06:00,196.5081,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 06:00,508.1,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 06:00,52.9,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 06:00,58.4,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 06:00,197.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 06:00,410.8,Opole,Generacja
+OPL 4-06,25.10.2026 06:00,411.6,Opole,Generacja
+OSB_2S02,25.10.2026 06:00,163.9,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 06:00,157.2,Połaniec,Generacja
+POL_2S03,25.10.2026 06:00,161.7,Połaniec,Generacja
+POL24S09,25.10.2026 06:00,131.5,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 06:00,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 06:00,42.3,Skawina,Generacja
+TUR 1-01,25.10.2026 06:00,101.4,Turów,Generacja
+TUR 2-03,25.10.2026 06:00,109.9,Turów,Generacja
+TUR 2-05,25.10.2026 06:00,103.2,Turów,Generacja
+ZGR22S01,25.10.2026 06:00,119.9034,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 06:00,-5.8099,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 06:00,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 06:00,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 06:15,199.4427,Bełchatów,Generacja
+BEL 4-06,25.10.2026 06:15,194.9334,Bełchatów,Generacja
+BEL 4-08,25.10.2026 06:15,220.0958,Bełchatów,Generacja
+BEL 4-09,25.10.2026 06:15,185.8852,Bełchatów,Generacja
+BEL 4-10,25.10.2026 06:15,227.2633,Bełchatów,Generacja
+BEL 4-12,25.10.2026 06:15,239.7348,Bełchatów,Generacja
+CHZ21S01,25.10.2026 06:15,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 06:15,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 06:15,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 06:15,60.5099,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 06:15,57.4444,EC Siekierki,Generacja
+STW42S12,25.10.2026 06:15,233.3,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 06:15,153.8,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 06:15,451.1,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 06:15,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 06:15,142.4,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 06:15,43.8643,Karolin 2,Generacja
+KAT_1S01,25.10.2026 06:15,62.16,Katowice,Generacja
+KOZ11S02,25.10.2026 06:15,195.5556,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 06:15,200.3171,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 06:15,204.728,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 06:15,134.32,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 06:15,190.7303,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 06:15,205.6829,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 06:15,523.1,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 06:15,53.5,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 06:15,57.6,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 06:15,197.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 06:15,412.2,Opole,Generacja
+OPL 4-06,25.10.2026 06:15,413,Opole,Generacja
+OSB_2S02,25.10.2026 06:15,162.2,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 06:15,155,Połaniec,Generacja
+POL_2S03,25.10.2026 06:15,169.7,Połaniec,Generacja
+POL24S09,25.10.2026 06:15,130.8,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 06:15,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 06:15,37.2,Skawina,Generacja
+TUR 1-01,25.10.2026 06:15,101.2,Turów,Generacja
+TUR 2-03,25.10.2026 06:15,101.9,Turów,Generacja
+TUR 2-05,25.10.2026 06:15,103.2,Turów,Generacja
+ZGR22S01,25.10.2026 06:15,119.8391,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 06:15,-5.8099,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 06:15,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 06:15,-3.9025,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 06:30,204.4633,Bełchatów,Generacja
+BEL 4-06,25.10.2026 06:30,213.7768,Bełchatów,Generacja
+BEL 4-08,25.10.2026 06:30,239.0837,Bełchatów,Generacja
+BEL 4-09,25.10.2026 06:30,197.3534,Bełchatów,Generacja
+BEL 4-10,25.10.2026 06:30,257.6598,Bełchatów,Generacja
+BEL 4-12,25.10.2026 06:30,260.0301,Bełchatów,Generacja
+CHZ21S01,25.10.2026 06:30,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 06:30,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 06:30,125.8,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 06:30,61.2942,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 06:30,56.6121,EC Siekierki,Generacja
+STW42S12,25.10.2026 06:30,280.6,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 06:30,197.8,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 06:30,517.2,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 06:30,145,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 06:30,150.2,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 06:30,43.6694,Karolin 2,Generacja
+KAT_1S01,25.10.2026 06:30,61.8,Katowice,Generacja
+KOZ11S02,25.10.2026 06:30,189.3495,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 06:30,185.3808,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 06:30,189.1979,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 06:30,146.5359,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 06:30,182.1175,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 06:30,193.4329,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 06:30,489.6,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 06:30,53.2,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 06:30,58.8,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 06:30,197.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 06:30,432.6,Opole,Generacja
+OPL 4-06,25.10.2026 06:30,435.7,Opole,Generacja
+OSB_2S02,25.10.2026 06:30,173.1,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 06:30,174.6,Połaniec,Generacja
+POL_2S03,25.10.2026 06:30,185.8,Połaniec,Generacja
+POL24S09,25.10.2026 06:30,130.6,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 06:30,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 06:30,35.6,Skawina,Generacja
+TUR 1-01,25.10.2026 06:30,101.4,Turów,Generacja
+TUR 2-03,25.10.2026 06:30,102.2,Turów,Generacja
+TUR 2-05,25.10.2026 06:30,102.9,Turów,Generacja
+ZGR22S01,25.10.2026 06:30,119.9142,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 06:30,-5.3521,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 06:30,-186.5835,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 06:30,-3.3684,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 06:30,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 06:45,196.4844,Bełchatów,Generacja
+BEL 4-06,25.10.2026 06:45,219.4993,Bełchatów,Generacja
+BEL 4-08,25.10.2026 06:45,232.7689,Bełchatów,Generacja
+BEL 4-09,25.10.2026 06:45,186.2336,Bełchatów,Generacja
+BEL 4-10,25.10.2026 06:45,256.085,Bełchatów,Generacja
+BEL 4-12,25.10.2026 06:45,259.423,Bełchatów,Generacja
+CHZ21S01,25.10.2026 06:45,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 06:45,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 06:45,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 06:45,60.2918,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 06:45,56.6121,EC Siekierki,Generacja
+STW42S12,25.10.2026 06:45,232.7,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 06:45,153.8,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 06:45,623.3,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 06:45,135,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 06:45,130.6,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 06:45,45.4347,Karolin 2,Generacja
+KAT_1S01,25.10.2026 06:45,62.09,Katowice,Generacja
+KOZ11S02,25.10.2026 06:45,185.4126,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 06:45,185.6366,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 06:45,187.9931,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 06:45,178.8409,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 06:45,183.4734,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 06:45,193.3333,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 06:45,463.8,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 06:45,51.6,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 06:45,55.4,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 06:45,197,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 06:45,411.3,Opole,Generacja
+OPL 4-06,25.10.2026 06:45,411.9,Opole,Generacja
+OSB_2S02,25.10.2026 06:45,189,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 06:45,173.3,Połaniec,Generacja
+POL_2S03,25.10.2026 06:45,195.3,Połaniec,Generacja
+POL24S09,25.10.2026 06:45,130.9,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 06:45,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 06:45,35.5,Skawina,Generacja
+TUR 1-01,25.10.2026 06:45,101.5,Turów,Generacja
+TUR 2-03,25.10.2026 06:45,102.2,Turów,Generacja
+TUR 2-05,25.10.2026 06:45,103.2,Turów,Generacja
+ZGR22S01,25.10.2026 06:45,120.0644,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 06:45,-5.314,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 06:45,-186.5835,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 06:45,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 06:45,-3.5592,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 07:00,199.894,Bełchatów,Generacja
+BEL 4-06,25.10.2026 07:00,212.4028,Bełchatów,Generacja
+BEL 4-08,25.10.2026 07:00,208.0838,Bełchatów,Generacja
+BEL 4-09,25.10.2026 07:00,200.5814,Bełchatów,Generacja
+BEL 4-10,25.10.2026 07:00,231.8102,Bełchatów,Generacja
+BEL 4-12,25.10.2026 07:00,235.3376,Bełchatów,Generacja
+CHZ21S01,25.10.2026 07:00,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 07:00,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 07:00,125.8,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 07:00,61.322,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 07:00,56.2288,EC Siekierki,Generacja
+STW42S12,25.10.2026 07:00,226.6,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 07:00,153.9,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 07:00,629.6,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 07:00,135,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 07:00,134.1,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 07:00,46.2797,Karolin 2,Generacja
+KAT_1S01,25.10.2026 07:00,62.21,Katowice,Generacja
+KOZ11S02,25.10.2026 07:00,182.3953,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 07:00,172.8866,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 07:00,174.93,Kozienice 1,Generacja
+KOZ12S03,25.10.2026 07:00,43.9815,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 07:00,182.6736,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 07:00,193.125,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 07:00,470.4,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 07:00,51.2,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 07:00,55,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 07:00,196.8,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 07:00,419.9,Opole,Generacja
+OPL 4-06,25.10.2026 07:00,420.9,Opole,Generacja
+OSB_2S02,25.10.2026 07:00,188.6,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 07:00,167.3,Połaniec,Generacja
+POL_2S03,25.10.2026 07:00,179.4,Połaniec,Generacja
+POL24S09,25.10.2026 07:00,131.3,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 07:00,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 07:00,35.6,Skawina,Generacja
+TUR 1-01,25.10.2026 07:00,93.6,Turów,Generacja
+TUR 2-03,25.10.2026 07:00,92.3,Turów,Generacja
+TUR 2-05,25.10.2026 07:00,100.1,Turów,Generacja
+ZGR22S01,25.10.2026 07:00,120.118,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 07:00,-5.3521,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 07:00,-186.0876,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 07:00,-3.521,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 07:00,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 07:15,204.2612,Bełchatów,Generacja
+BEL 4-06,25.10.2026 07:15,194.8894,Bełchatów,Generacja
+BEL 4-08,25.10.2026 07:15,213.6671,Bełchatów,Generacja
+BEL 4-09,25.10.2026 07:15,186.6203,Bełchatów,Generacja
+BEL 4-10,25.10.2026 07:15,224.4913,Bełchatów,Generacja
+BEL 4-12,25.10.2026 07:15,243.0045,Bełchatów,Generacja
+CHZ21S01,25.10.2026 07:15,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 07:15,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 07:15,125.8,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 07:15,60.2639,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 07:15,56.9559,EC Siekierki,Generacja
+STW42S12,25.10.2026 07:15,200.1,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 07:15,153.6,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 07:15,589.3,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 07:15,135,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 07:15,131.4,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 07:15,45.8104,Karolin 2,Generacja
+KAT_1S01,25.10.2026 07:15,61.8,Katowice,Generacja
+KOZ11S02,25.10.2026 07:15,192.0359,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 07:15,185.0093,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 07:15,189.7112,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 07:15,197.088,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 07:15,206.0509,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 07:15,495.1,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 07:15,49.8,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 07:15,51.7,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 07:15,196.6,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 07:15,410.9,Opole,Generacja
+OPL 4-06,25.10.2026 07:15,412.7,Opole,Generacja
+OSB_2S02,25.10.2026 07:15,189.1,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 07:15,177.1,Połaniec,Generacja
+POL_2S03,25.10.2026 07:15,171.6,Połaniec,Generacja
+POL24S09,25.10.2026 07:15,132,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 07:15,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 07:15,35.5,Skawina,Generacja
+TUR 1-01,25.10.2026 07:15,101.2,Turów,Generacja
+TUR 2-03,25.10.2026 07:15,102.1,Turów,Generacja
+TUR 2-05,25.10.2026 07:15,102.6,Turów,Generacja
+ZGR22S01,25.10.2026 07:15,120.0966,Zielona Góra,Generacja
+ZRN_4-01,25.10.2026 07:15,-5.5047,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 07:15,-186.7361,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 07:15,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 07:15,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 07:30,201.8428,Bełchatów,Generacja
+BEL 4-06,25.10.2026 07:30,217.1886,Bełchatów,Generacja
+BEL 4-08,25.10.2026 07:30,213.8431,Bełchatów,Generacja
+BEL 4-09,25.10.2026 07:30,187.7725,Bełchatów,Generacja
+BEL 4-10,25.10.2026 07:30,224.3855,Bełchatów,Generacja
+BEL 4-12,25.10.2026 07:30,249.1836,Bełchatów,Generacja
+CHZ21S01,25.10.2026 07:30,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 07:30,33.42,Chorzów,Generacja
+CZN_1S01,25.10.2026 07:30,125.8,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 07:30,60.8858,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 07:30,56.4929,EC Siekierki,Generacja
+STW42S12,25.10.2026 07:30,245,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 07:30,153.9,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 07:30,584,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 07:30,135,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 07:30,139.8,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 07:30,45.1168,Karolin 2,Generacja
+KAT_1S01,25.10.2026 07:30,62.25,Katowice,Generacja
+KOZ11S02,25.10.2026 07:30,188.9144,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 07:30,186.3449,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 07:30,190.3762,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 07:30,182.7639,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 07:30,193.9682,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 07:30,494,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 07:30,51.4,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 07:30,50.4,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 07:30,197.4,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 07:30,415.5,Opole,Generacja
+OPL 4-06,25.10.2026 07:30,417.2,Opole,Generacja
+OSB_2S02,25.10.2026 07:30,198.5,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 07:30,178.2,Połaniec,Generacja
+POL_2S03,25.10.2026 07:30,174.8,Połaniec,Generacja
+POL24S09,25.10.2026 07:30,130.9,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 07:30,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 07:30,35.7,Skawina,Generacja
+TUR 1-01,25.10.2026 07:30,101.1,Turów,Generacja
+TUR 2-03,25.10.2026 07:30,101.9,Turów,Generacja
+TUR 2-05,25.10.2026 07:30,103.1,Turów,Generacja
+ZGR22S01,25.10.2026 07:30,120.1717,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 07:30,25.5,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 07:30,-5.5047,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 07:30,-186.2402,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 07:30,-3.521,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 07:30,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 07:45,192.8659,Bełchatów,Generacja
+BEL 4-06,25.10.2026 07:45,201.1589,Bełchatów,Generacja
+BEL 4-08,25.10.2026 07:45,201.799,Bełchatów,Generacja
+BEL 4-09,25.10.2026 07:45,186.891,Bełchatów,Generacja
+BEL 4-10,25.10.2026 07:45,222.9394,Bełchatów,Generacja
+BEL 4-12,25.10.2026 07:45,243.0956,Bełchatów,Generacja
+CHZ21S01,25.10.2026 07:45,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 07:45,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 07:45,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 07:45,60.3707,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 07:45,56.6252,EC Siekierki,Generacja
+STW42S12,25.10.2026 07:45,201.7,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 07:45,153.7,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 07:45,455.6,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 07:45,135,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 07:45,130.5,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 07:45,45.9011,Karolin 2,Generacja
+KAT_1S01,25.10.2026 07:45,62.05,Katowice,Generacja
+KOZ11S02,25.10.2026 07:45,188.0434,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 07:45,185.0984,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 07:45,189.3119,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 07:45,181.3993,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 07:45,193.3837,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 07:45,490.5,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 07:45,51,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 07:45,50.2,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 07:45,197,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 07:45,411,Opole,Generacja
+OPL 4-06,25.10.2026 07:45,411.7,Opole,Generacja
+OSB_2S02,25.10.2026 07:45,161,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 07:45,174.9,Połaniec,Generacja
+POL_2S03,25.10.2026 07:45,174.7,Połaniec,Generacja
+POL24S09,25.10.2026 07:45,130.8,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 07:45,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 07:45,35.5,Skawina,Generacja
+TUR 1-01,25.10.2026 07:45,101.1,Turów,Generacja
+TUR 2-03,25.10.2026 07:45,102.3,Turów,Generacja
+TUR 2-05,25.10.2026 07:45,103.3,Turów,Generacja
+ZGR22S01,25.10.2026 07:45,120.1395,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 07:45,22,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 07:45,-5.5047,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 07:45,-186.3928,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 07:45,-3.6736,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 07:45,-3.8643,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 08:00,201.7067,Bełchatów,Generacja
+BEL 4-06,25.10.2026 08:00,192.2384,Bełchatów,Generacja
+BEL 4-08,25.10.2026 08:00,196.171,Bełchatów,Generacja
+BEL 4-09,25.10.2026 08:00,192.5327,Bełchatów,Generacja
+BEL 4-10,25.10.2026 08:00,203.9295,Bełchatów,Generacja
+BEL 4-12,25.10.2026 08:00,203.7889,Bełchatów,Generacja
+CHZ21S01,25.10.2026 08:00,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 08:00,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 08:00,125.8,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 08:00,60.1917,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 08:00,57.2854,EC Siekierki,Generacja
+STW42S12,25.10.2026 08:00,208.8,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 08:00,153.7,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 08:00,432.4,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 08:00,135,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 08:00,134.4,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 08:00,45.5414,Karolin 2,Generacja
+KAT_1S01,25.10.2026 08:00,57.07,Katowice,Generacja
+KOZ11S02,25.10.2026 08:00,169.9491,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 08:00,165.7338,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 08:00,169.9294,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 08:00,166.6788,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 08:00,169.6481,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 08:00,441.9,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 08:00,50.6,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 08:00,52,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 08:00,196.6,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 08:00,425.4,Opole,Generacja
+OPL 4-06,25.10.2026 08:00,425.5,Opole,Generacja
+OSB_2S02,25.10.2026 08:00,130.6,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 08:00,150.4,Połaniec,Generacja
+POL_2S03,25.10.2026 08:00,159.1,Połaniec,Generacja
+POL24S09,25.10.2026 08:00,131.4,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 08:00,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 08:00,35.5,Skawina,Generacja
+TUR 1-01,25.10.2026 08:00,101.5,Turów,Generacja
+TUR 2-03,25.10.2026 08:00,102.1,Turów,Generacja
+TUR 2-05,25.10.2026 08:00,103.1,Turów,Generacja
+ZGR22S01,25.10.2026 08:00,119.8605,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 08:00,29.3,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 08:00,-6.0006,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 08:00,-185.4391,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 08:00,-3.8262,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 08:15,217.1875,Bełchatów,Generacja
+BEL 4-06,25.10.2026 08:15,202.0227,Bełchatów,Generacja
+BEL 4-08,25.10.2026 08:15,215.4411,Bełchatów,Generacja
+BEL 4-09,25.10.2026 08:15,207.5126,Bełchatów,Generacja
+BEL 4-10,25.10.2026 08:15,239.4478,Bełchatów,Generacja
+BEL 4-12,25.10.2026 08:15,249.8438,Bełchatów,Generacja
+CHZ21S01,25.10.2026 08:15,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 08:15,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 08:15,125.7,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 08:15,71.0721,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 08:15,57.6687,EC Siekierki,Generacja
+STW42S12,25.10.2026 08:15,261.1,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 08:15,189.5,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 08:15,465.8,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 08:15,145,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 08:15,152.4,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 08:15,44.944,Karolin 2,Generacja
+KAT_1S01,25.10.2026 08:15,61.54,Katowice,Generacja
+KOZ11S02,25.10.2026 08:15,187.8744,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 08:15,185.5793,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 08:15,185.1452,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 08:15,184.3015,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 08:15,193.5856,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 08:15,415.5,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 08:15,51,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 08:15,52.3,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 08:15,197.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 08:15,445.9,Opole,Generacja
+OPL 4-06,25.10.2026 08:15,444.5,Opole,Generacja
+OSB_2S02,25.10.2026 08:15,158.7,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 08:15,165.5,Połaniec,Generacja
+POL_2S03,25.10.2026 08:15,155.6,Połaniec,Generacja
+POL24S09,25.10.2026 08:15,131.8,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 08:15,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 08:15,35.8,Skawina,Generacja
+TUR 1-01,25.10.2026 08:15,101.3,Turów,Generacja
+TUR 2-03,25.10.2026 08:15,102.1,Turów,Generacja
+TUR 2-05,25.10.2026 08:15,103.1,Turów,Generacja
+ZGR22S01,25.10.2026 08:15,119.9464,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 08:15,17.7,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 08:15,-6.1913,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 08:15,-186.4309,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 08:15,-3.5973,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 08:30,198.3073,Bełchatów,Generacja
+BEL 4-06,25.10.2026 08:30,205.8628,Bełchatów,Generacja
+BEL 4-08,25.10.2026 08:30,191.2129,Bełchatów,Generacja
+BEL 4-09,25.10.2026 08:30,185.938,Bełchatów,Generacja
+BEL 4-10,25.10.2026 08:30,218.6965,Bełchatów,Generacja
+BEL 4-12,25.10.2026 08:30,227.4543,Bełchatów,Generacja
+CHZ21S01,25.10.2026 08:30,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 08:30,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 08:30,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 08:30,69.6441,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 08:30,62.5811,EC Siekierki,Generacja
+STW42S12,25.10.2026 08:30,238.6,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 08:30,153.7,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 08:30,410.2,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 08:30,145,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 08:30,142.8,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 08:30,44.9832,Karolin 2,Generacja
+KAT_1S01,25.10.2026 08:30,58.4,Katowice,Generacja
+KOZ11S02,25.10.2026 08:30,170.5625,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 08:30,194.3137,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 08:30,197.4867,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 08:30,183.9497,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 08:30,202.9815,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 08:30,410.7,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 08:30,49.4,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 08:30,52.2,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 08:30,197.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 08:30,410.5,Opole,Generacja
+OPL 4-06,25.10.2026 08:30,411.2,Opole,Generacja
+OSB_2S02,25.10.2026 08:30,148.9,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 08:30,149,Połaniec,Generacja
+POL_2S03,25.10.2026 08:30,140.3,Połaniec,Generacja
+POL24S09,25.10.2026 08:30,131.1,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 08:30,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 08:30,35.7,Skawina,Generacja
+TUR 1-01,25.10.2026 08:30,100.4,Turów,Generacja
+TUR 2-03,25.10.2026 08:30,100.4,Turów,Generacja
+TUR 2-05,25.10.2026 08:30,101.4,Turów,Generacja
+ZGR22S01,25.10.2026 08:30,120.0107,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 08:30,21.7,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 08:30,-6.3058,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 08:30,-186.5835,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 08:30,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 08:45,197.9749,Bełchatów,Generacja
+BEL 4-08,25.10.2026 08:45,201.3539,Bełchatów,Generacja
+BEL 4-09,25.10.2026 08:45,186.4798,Bełchatów,Generacja
+BEL 4-10,25.10.2026 08:45,217.5515,Bełchatów,Generacja
+BEL 4-12,25.10.2026 08:45,234.5698,Bełchatów,Generacja
+CHZ21S01,25.10.2026 08:45,33.9,Chorzów,Generacja
+CHZ21S02,25.10.2026 08:45,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 08:45,125.5,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 08:45,58.1967,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 08:45,58.8788,EC Siekierki,Generacja
+STW42S12,25.10.2026 08:45,238.4,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 08:45,154,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 08:45,423.3,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 08:45,145,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 08:45,141,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 08:45,46.1165,Karolin 2,Generacja
+KAT_1S01,25.10.2026 08:45,56.79,Katowice,Generacja
+KOZ11S02,25.10.2026 08:45,183.1696,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 08:45,179.0613,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 08:45,183.3438,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 08:45,176.6707,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 08:45,191.7876,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 08:45,394.5,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 08:45,49.5,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 08:45,51.5,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 08:45,197,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 08:45,410.5,Opole,Generacja
+OPL 4-06,25.10.2026 08:45,411.1,Opole,Generacja
+OSB_2S02,25.10.2026 08:45,154.4,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 08:45,153.3,Połaniec,Generacja
+POL_2S03,25.10.2026 08:45,144.6,Połaniec,Generacja
+POL24S09,25.10.2026 08:45,131.4,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 08:45,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 08:45,34.9,Skawina,Generacja
+TUR 1-01,25.10.2026 08:45,101,Turów,Generacja
+TUR 2-03,25.10.2026 08:45,102.1,Turów,Generacja
+TUR 2-05,25.10.2026 08:45,101.1,Turów,Generacja
+ZGR22S01,25.10.2026 08:45,120.2361,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 08:45,32.4,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 08:45,-6.0006,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 08:45,-186.5454,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 08:45,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 09:00,219.6215,Bełchatów,Generacja
+BEL 4-08,25.10.2026 09:00,207.3323,Bełchatów,Generacja
+BEL 4-09,25.10.2026 09:00,208.1646,Bełchatów,Generacja
+BEL 4-10,25.10.2026 09:00,234.2068,Bełchatów,Generacja
+BEL 4-12,25.10.2026 09:00,239.5493,Bełchatów,Generacja
+CHZ21S01,25.10.2026 09:00,33.58,Chorzów,Generacja
+CHZ21S02,25.10.2026 09:00,33.42,Chorzów,Generacja
+CZN_1S01,25.10.2026 09:00,125.7,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 09:00,53.1424,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 09:00,56.9101,EC Siekierki,Generacja
+STW42S12,25.10.2026 09:00,284.2,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 09:00,189.5,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 09:00,473.6,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 09:00,145,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 09:00,155.4,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 09:00,45.6703,Karolin 2,Generacja
+KAT_1S01,25.10.2026 09:00,59.16,Katowice,Generacja
+KOZ11S02,25.10.2026 09:00,179.2737,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 09:00,176.1007,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 09:00,176.5307,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 09:00,178.8837,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 09:00,174.8472,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 09:00,359.2,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 09:00,49.7,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 09:00,52.1,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 09:00,196.8,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 09:00,442.6,Opole,Generacja
+OPL 4-06,25.10.2026 09:00,451.8,Opole,Generacja
+OSB_2S02,25.10.2026 09:00,144.4,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 09:00,158.5,Połaniec,Generacja
+POL_2S03,25.10.2026 09:00,148,Połaniec,Generacja
+POL24S09,25.10.2026 09:00,131.1,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 09:00,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 09:00,36.6,Skawina,Generacja
+TUR 1-01,25.10.2026 09:00,101.2,Turów,Generacja
+TUR 2-03,25.10.2026 09:00,102.1,Turów,Generacja
+TUR 2-05,25.10.2026 09:00,103.1,Turów,Generacja
+ZGR22S01,25.10.2026 09:00,120.0322,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 09:00,17.2,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 09:00,-6.8017,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 09:00,-185.5917,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 09:00,-3.9025,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 09:15,225.5968,Bełchatów,Generacja
+BEL 4-08,25.10.2026 09:15,226.7579,Bełchatów,Generacja
+BEL 4-09,25.10.2026 09:15,228.1521,Bełchatów,Generacja
+BEL 4-10,25.10.2026 09:15,241.605,Bełchatów,Generacja
+BEL 4-12,25.10.2026 09:15,261.7869,Bełchatów,Generacja
+CHZ21S01,25.10.2026 09:15,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 09:15,33.9,Chorzów,Generacja
+CZN_1S01,25.10.2026 09:15,125.9,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 09:15,52.8701,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 09:15,57.134,EC Siekierki,Generacja
+STW42S12,25.10.2026 09:15,295.7,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 09:15,243.9,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 09:15,561.4,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 09:15,165,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 09:15,172.3,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 09:15,45.4365,Karolin 2,Generacja
+KAT_1S01,25.10.2026 09:15,59.07,Katowice,Generacja
+KOZ11S02,25.10.2026 09:15,194.6736,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 09:15,195.9583,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 09:15,195.4387,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 09:15,197.6736,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 09:15,193.3542,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 09:15,393.4,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 09:15,49.4,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 09:15,52.4,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 09:15,197.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 09:15,484.4,Opole,Generacja
+OPL 4-06,25.10.2026 09:15,488.1,Opole,Generacja
+OSB_2S02,25.10.2026 09:15,173.7,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 09:15,176.6,Połaniec,Generacja
+POL_2S03,25.10.2026 09:15,165.2,Połaniec,Generacja
+POL24S09,25.10.2026 09:15,131.6,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 09:15,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 09:15,36.5,Skawina,Generacja
+TUR 1-01,25.10.2026 09:15,99.7,Turów,Generacja
+TUR 2-03,25.10.2026 09:15,102.2,Turów,Generacja
+TUR 2-05,25.10.2026 09:15,101.3,Turów,Generacja
+ZGR22S01,25.10.2026 09:15,120.0536,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 09:15,14.9,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 09:15,-6.0006,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 09:15,-186.7361,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 09:15,-206.6491,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 09:15,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 09:30,237.552,Bełchatów,Generacja
+BEL 4-08,25.10.2026 09:30,238.3005,Bełchatów,Generacja
+BEL 4-09,25.10.2026 09:30,239.7143,Bełchatów,Generacja
+BEL 4-10,25.10.2026 09:30,254.1442,Bełchatów,Generacja
+BEL 4-12,25.10.2026 09:30,275.7972,Bełchatów,Generacja
+CHZ21S01,25.10.2026 09:30,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 09:30,33.58,Chorzów,Generacja
+CZN_1S01,25.10.2026 09:30,126,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 09:30,52.8733,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 09:30,57.2523,EC Siekierki,Generacja
+STW42S12,25.10.2026 09:30,240.6,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 09:30,213,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 09:30,666.6,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 09:30,175,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 09:30,155.6,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 09:30,46.5613,Karolin 2,Generacja
+KAT_1S01,25.10.2026 09:30,53.99,Katowice,Generacja
+KOZ11S02,25.10.2026 09:30,189.3895,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 09:30,185.0579,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 09:30,189.4566,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 09:30,193.6071,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 09:30,197.8744,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 09:30,425.4,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 09:30,49.6,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 09:30,52.5,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 09:30,187,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 09:30,445.4,Opole,Generacja
+OPL 4-06,25.10.2026 09:30,438.5,Opole,Generacja
+OSB_2S02,25.10.2026 09:30,191,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 09:30,194.3,Połaniec,Generacja
+POL_2S03,25.10.2026 09:30,141.6,Połaniec,Generacja
+POL24S09,25.10.2026 09:30,131.6,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 09:30,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 09:30,37,Skawina,Generacja
+TUR 1-01,25.10.2026 09:30,101,Turów,Generacja
+TUR 2-03,25.10.2026 09:30,102,Turów,Generacja
+TUR 2-05,25.10.2026 09:30,102.6,Turów,Generacja
+ZGR22S01,25.10.2026 09:30,119.7318,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 09:30,20.7,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 09:30,-5.6573,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 09:30,-186.1257,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 09:30,-206.1913,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 09:30,-3.7499,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 09:45,228.6036,Bełchatów,Generacja
+BEL 4-08,25.10.2026 09:45,229.3604,Bełchatów,Generacja
+BEL 4-09,25.10.2026 09:45,215.4656,Bełchatów,Generacja
+BEL 4-10,25.10.2026 09:45,244.8274,Bełchatów,Generacja
+BEL 4-12,25.10.2026 09:45,254.5364,Bełchatów,Generacja
+CHZ21S01,25.10.2026 09:45,33.58,Chorzów,Generacja
+CHZ21S02,25.10.2026 09:45,33.74,Chorzów,Generacja
+CZN_1S01,25.10.2026 09:45,121.4,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 09:45,58.5216,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 09:45,56.4993,EC Siekierki,Generacja
+STW42S12,25.10.2026 09:45,214.6,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 09:45,189.4,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 09:45,641.4,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 09:45,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 09:45,129.5,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 09:45,46.0346,Karolin 2,Generacja
+KAT_1S01,25.10.2026 09:45,53.97,Katowice,Generacja
+KOZ11S02,25.10.2026 09:45,187.886,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 09:45,185.6591,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 09:45,188.4896,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 09:45,192.3594,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 09:45,197.8548,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 09:45,484,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 09:45,49.4,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 09:45,51.9,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 09:45,187,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 09:45,410.3,Opole,Generacja
+OPL 4-06,25.10.2026 09:45,411.5,Opole,Generacja
+OSB_2S02,25.10.2026 09:45,203.2,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 09:45,186.5,Połaniec,Generacja
+POL_2S03,25.10.2026 09:45,144.2,Połaniec,Generacja
+POL24S09,25.10.2026 09:45,132.2,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 09:45,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 09:45,36.8,Skawina,Generacja
+TUR 1-01,25.10.2026 09:45,101.4,Turów,Generacja
+TUR 2-03,25.10.2026 09:45,99.3,Turów,Generacja
+TUR 2-05,25.10.2026 09:45,103.5,Turów,Generacja
+ZGR22S01,25.10.2026 09:45,120,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 09:45,23.5,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 09:45,-5.314,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 09:45,-186.3928,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 09:45,-206.0388,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 09:45,-3.7118,Żarnowiec,Pobór
+BEL 2-04,25.10.2026 10:00,230.0714,Bełchatów,Generacja
+BEL 4-08,25.10.2026 10:00,216.8951,Bełchatów,Generacja
+BEL 4-09,25.10.2026 10:00,218.6051,Bełchatów,Generacja
+BEL 4-10,25.10.2026 10:00,237.703,Bełchatów,Generacja
+BEL 4-12,25.10.2026 10:00,257.3227,Bełchatów,Generacja
+CHZ21S01,25.10.2026 10:00,33.74,Chorzów,Generacja
+CHZ21S02,25.10.2026 10:00,33.9,Chorzów,Generacja
+CZN_1S01,25.10.2026 10:00,83.2,EC Czechnica-2,Generacja
+WSIB1-07,25.10.2026 10:00,55.6901,EC Siekierki,Generacja
+WSIB1-10,25.10.2026 10:00,56.4467,EC Siekierki,Generacja
+STW42S12,25.10.2026 10:00,260.3,EC Stalowa Wola,Generacja
+WLC_2S01,25.10.2026 10:00,198.3,EC Włocławek,Generacja
+JW2_4S07,25.10.2026 10:00,568.5,Jaworzno 2 JWCD,Generacja
+JW3_1S03,25.10.2026 10:00,134,Jaworzno 3,Generacja
+JW3_2S05,25.10.2026 10:00,134.4,Jaworzno 3,Generacja
+KAR_1S02,25.10.2026 10:00,45.9496,Karolin 2,Generacja
+KAT_1S01,25.10.2026 10:00,54,Katowice,Generacja
+KOZ11S02,25.10.2026 10:00,189.7425,Kozienice 1,Generacja
+KOZ11S06,25.10.2026 10:00,185.581,Kozienice 1,Generacja
+KOZ12S01,25.10.2026 10:00,189.1754,Kozienice 1,Generacja
+KOZ12S07,25.10.2026 10:00,192.4022,Kozienice 1,Generacja
+KOZ12S08,25.10.2026 10:00,196.0098,Kozienice 1,Generacja
+KOZ24S09,25.10.2026 10:00,438.9,Kozienice 2,Generacja
+KLE 1-01,25.10.2026 10:00,49.1,Kraków Łęg,Generacja
+KLE 1-04,25.10.2026 10:00,53.5,Kraków Łęg,Generacja
+BPR_4P01,25.10.2026 10:00,187.2,MFW Baltic Power,Generacja
+OPL 4-05,25.10.2026 10:00,445.8,Opole,Generacja
+OPL 4-06,25.10.2026 10:00,450.3,Opole,Generacja
+OSB_2S02,25.10.2026 10:00,171.8,Ostrołęka B,Generacja
+POL_2S02,25.10.2026 10:00,176.3,Połaniec,Generacja
+POL_2S03,25.10.2026 10:00,155.1,Połaniec,Generacja
+POL24S09,25.10.2026 10:00,131.5,Połaniec 2-Pasywna,Generacja
+PLO_4S01,25.10.2026 10:00,0.0031,Płock,Generacja
+SNA22S06,25.10.2026 10:00,36.8,Skawina,Generacja
+TUR 1-01,25.10.2026 10:00,101.4,Turów,Generacja
+TUR 2-03,25.10.2026 10:00,102.4,Turów,Generacja
+TUR 2-05,25.10.2026 10:00,103.4,Turów,Generacja
+ZGR22S01,25.10.2026 10:00,120.1931,Zielona Góra,Generacja
+ZWA_1P03,25.10.2026 10:00,22.2,Zwartowo,Generacja
+ZRN_4-01,25.10.2026 10:00,-5.5047,Żarnowiec,Pobór
+ZRN_4-02,25.10.2026 10:00,-186.2402,Żarnowiec,Pobór
+ZRN_4-03,25.10.2026 10:00,-206.3058,Żarnowiec,Pobór
+ZRN_4-04,25.10.2026 10:00,-3.5592,Żarnowiec,Pobór
